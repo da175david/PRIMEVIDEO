@@ -1,0 +1,92 @@
+body {
+    background-color: darkgrey;
+
+}
+    .container-principal {
+        margin-bottom: 20vh;
+    }
+
+    .container-title-controls {
+        display: flex;
+        align-items:center;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container-title-controls h2 {
+        color: dodgerblue;
+        text-decoration: double;
+        font-size: 30px;
+    }
+    .container-father {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    /*------FLECHAS------*/
+
+    .fl-right, .fl-left {
+        position: absolute;
+        border: none;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 60px;
+        height: 50%;
+        top: calc(50% - 25%);
+        line-height: 40px;
+        width: 2%;
+        color: #fff;
+        cursor: pointer;
+        z-index: 500;
+        transition: .2s ease all;
+    }
+    .fl-right {
+        right: 0;
+    }
+    .fl-left {
+        left: 0;
+    }
+    .fl-left:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .fl-right:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+
+    .container-carousel {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .movie {
+        min-width: 20%;
+        transition: .3s ease all;
+    }
+    .movie:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+    }
+img {
+        width: 100%;
+        vertical-align: top;
+    }
+
+
+    @media screen and (max-width:800px) {
+        .container-carousel {
+            overflow: visible;
+        }
+        .carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:20px;
+        }
+        .fl-right, .fl-left {
+            display: none;
+        }
+    }
