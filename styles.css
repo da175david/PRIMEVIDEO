@@ -1,11 +1,135 @@
 body {
-    background-color: darkgrey;
-
-}
-    .container-principal {
-        margin-bottom: 20vh;
+    background-color: #0f171e;
+    margin: 0%;
+    }
+    header {
+        display: flex;
+        background-color: rgba(27,37,48,.85);
+        width: 100%;
+        padding-top: .5em;
+    }
+    /*------SLIDER--ANIMATION------*/
+    .slider {
+        width: 95%;
+        margin: auto ;
+        overflow: hidden;   
+    }
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 1000%;
+        animation: cambio 36s infinite ease-in-out;
+        animation-direction: alternate;
+    }
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        width: 100%;
     }
 
+    @keyframes cambio {
+    0% {margin-left: 0%;}
+    5% {margin-left: 0%;}
+
+    10% {margin-left: -100%;}
+    20% {margin-left: -100%;}
+    
+    25% {margin-left: -200%;}
+    35% {margin-left: -200%;}
+    
+    40% {margin-left: -300%;}
+    45% {margin-left: -300%;}
+
+    50% {margin-left: -400%;}
+    55% {margin-left: -400%;}
+
+    60% {margin-left: -500%;}
+    65% {margin-left: -500%;}
+
+    70% {margin-left: -600%;}
+    75% {margin-left: -600%;}
+
+    80% {margin-left: -700%;}
+    85% {margin-left: -700%;}
+
+    90% {margin-left: -800%;}
+    95% {margin-left: -800%;}
+
+    100% {margin-left: 900%;}
+    100% {margin-left: -900%;}
+}
+        .logo1 {
+            width: 120px;
+            padding-left: 2.5em;
+            padding-top: .5em;
+            display: flex;
+        }
+        .bottons1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25em;
+            padding-left: 1em;
+            color: rgba(242, 244, 246,.9);
+            font-family: sans-serif;
+            font-size: 17px;
+        }
+        .vacio {
+            width: 54em;
+            height: 1em;
+            display: flex;
+        }
+        .fin {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .busc {
+            width: 20px;
+            display: flex;
+        }
+        .datos > li {
+            float:right;
+            width: 50%;
+            margin: right -1px;
+        }
+        .datos li a {
+            color:#fff;
+            text-decoration:none;
+            padding:10px 12px;
+            display:flex;
+        }
+        .1box {
+            color:#fff;
+            text-decoration:none;
+            padding:10px 12px;
+            display:flex;
+        }
+        .datos li a::selection {
+            background-color:#434343;
+        }
+        .datos li ul {
+            display:none;
+            position:absolute;
+            background-color: #414c53;
+        }
+        .datos li:hover > ul {
+            display:block;
+        }
+    ul,ol {
+        list-style: none;
+    }
+    /*-------SLIDERS--------*/
+    .container-principal {
+        margin-bottom: .5vh;
+        width: 95%;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        left: 45px;
+    }
     .container-title-controls {
         display: flex;
         align-items:center;
@@ -15,17 +139,21 @@ body {
     .container-title-controls h2 {
         color: dodgerblue;
         text-decoration: double;
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .container-title-controls span {
+        color: rgb(255, 255, 255);
+        text-decoration: double;
+        font-size: 20px;
     }
     .container-father {
         display: flex;
         align-items: center;
         width: 100%;
         position: relative;
+
     }
-
-    /*------FLECHAS------*/
-
+    /*------FLECHAS-1------*/
     .fl-right, .fl-left {
         position: absolute;
         border: none;
@@ -52,7 +180,6 @@ body {
     .fl-right:hover {
         background-color: rgba(0,0,0,0.9);
     }
-
     .container-carousel {
         width: 100%;
         padding: 20px 0;
@@ -75,8 +202,6 @@ img {
         width: 100%;
         vertical-align: top;
     }
-
-
     @media screen and (max-width:800px) {
         .container-carousel {
             overflow: visible;
@@ -87,6 +212,196 @@ img {
             gap:20px;
         }
         .fl-right, .fl-left {
+            display: none;
+        }
+    }
+    /*------SLIDERS-2------*/
+    .container-principal1 {
+        margin-bottom: .5vh;
+        width: 95%;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        left: 45px;
+    }
+    .container-title-controls1 {
+        display: flex;
+        align-items:center;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container-title-controls1 h2 {
+            color: dodgerblue;
+            text-decoration: double;
+            font-size: 20px;
+    }
+    .container-title-controls1 span {
+            color: rgb(255, 255, 255);
+            text-decoration: double;
+            font-size: 20px;
+    }
+
+    .container-father1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+    }
+    /*------FLECHAS-1------*/
+    .fl-right1, .fl-left1 {
+        position: absolute;
+        border: none;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 60px;
+        height: 50%;
+        top: calc(50% - 25%);
+        line-height: 40px;
+        width: 2%;
+        color: #fff;
+        cursor: pointer;
+        z-index: 500;
+        transition: .2s ease all;
+    }
+    .fl-right1 {
+        right: 0;
+    }
+    .fl-left1 {
+        left: 0;
+    }
+    .fl-left1:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .fl-right1:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .container-carousel1 {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .carousel1 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .movie1 {
+        min-width: 20%;
+        transition: .3s ease all;
+    }
+    .movie1:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+    }
+    .imgs2 {
+        width: 100%;
+        vertical-align: top;
+    }
+    @media screen and (max-width:800px) {
+        .container-carousel1 {
+            overflow: visible;
+        }
+        .carousel1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:20px;
+        }
+        .fl-right1, .fl-left1 {
+            display: none;
+        }
+    }
+    /*------SLIDERS-3------*/
+    .container-principal2 {
+        margin-bottom: .5vh;
+        width: 95%;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        left: 45px;
+    }
+    .container-title-controls2 {
+        display: flex;
+        align-items:center;
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container-title-controls2 h2 {
+        color: dodgerblue;
+        text-decoration: double;
+        font-size: 20px;
+    }
+    .container-title-controls2 span {
+        color: rgb(255, 255, 255);
+        text-decoration: double;
+        font-size: 20px;
+    }
+    .container-father2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+    }
+    /*------FLECHAS-2------*/
+    .fl-right2, .fl-left2 {
+        position: absolute;
+        border: none;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 60px;
+        height: 50%;
+        top: calc(50% - 25%);
+        line-height: 40px;
+        width: 2%;
+        color: #fff;
+        cursor: pointer;
+        z-index: 500;
+        transition: .2s ease all;
+    }
+    .fl-right2 {
+        right: 0;
+    }
+    .fl-left2 {
+        left: 0;
+    }
+    .fl-left2:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .fl-right2:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .container-carousel2 {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .carousel2 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .movie2 {
+        min-width: 20%;
+        transition: .3s ease all;
+    }
+    .movie2:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+    }
+    .imgs3 {
+        width: 100%;
+        vertical-align: top;
+    }
+    @media screen and (max-width:800px) {
+        .container-carousel2 {
+            overflow: visible;
+        }
+        .carousel2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:20px;
+        }
+        .fl-right2, .fl-left2 {
             display: none;
         }
     }
