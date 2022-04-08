@@ -12,7 +12,7 @@ body {
     .slider {
         width: 95%;
         margin: auto ;
-        overflow: hidden;   
+        overflow: hidden;
     }
     .slider ul {
         display: flex;
@@ -28,35 +28,33 @@ body {
     .slider img {
         width: 100%;
     }
-
     @keyframes cambio {
     0% {margin-left: 0%;}
     5% {margin-left: 0%;}
-
+    /*-------*/
     10% {margin-left: -100%;}
     20% {margin-left: -100%;}
-    
     25% {margin-left: -200%;}
     35% {margin-left: -200%;}
-    
+    /*-------*/
     40% {margin-left: -300%;}
     45% {margin-left: -300%;}
-
+    /*-------*/
     50% {margin-left: -400%;}
     55% {margin-left: -400%;}
-
+    /*-------*/
     60% {margin-left: -500%;}
     65% {margin-left: -500%;}
-
+    /*-------*/
     70% {margin-left: -600%;}
     75% {margin-left: -600%;}
-
+    /*-------*/
     80% {margin-left: -700%;}
     85% {margin-left: -700%;}
-
+    /*-------*/
     90% {margin-left: -800%;}
     95% {margin-left: -800%;}
-
+    /*-------*/
     100% {margin-left: 900%;}
     100% {margin-left: -900%;}
 }
@@ -151,7 +149,6 @@ body {
         align-items: center;
         width: 100%;
         position: relative;
-
     }
     /*------FLECHAS-1------*/
     .fl-right, .fl-left {
@@ -240,13 +237,11 @@ img {
             text-decoration: double;
             font-size: 20px;
     }
-
     .container-father1 {
         display: flex;
         align-items: center;
         width: 100%;
         position: relative;
-
     }
     /*------FLECHAS-1------*/
     .fl-right1, .fl-left1 {
@@ -341,7 +336,6 @@ img {
         align-items: center;
         width: 100%;
         position: relative;
-
     }
     /*------FLECHAS-2------*/
     .fl-right2, .fl-left2 {
